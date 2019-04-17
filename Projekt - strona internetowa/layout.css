@@ -1,0 +1,392 @@
+﻿body
+{
+    /*Wymiary przekopiowałem ng-pluralize pliku layout.css z zajęć */ 
+    height:auto;
+    margin:auto;
+    font-family:'Ubuntu', sans-serif;
+    background-color:black;
+    color:whitesmoke;
+    width:1024px;
+}
+    /*Szkoda, że nie starczyło czasu by dokończyć... Mam jednak nadzieję, że nie jest najgorzej*/
+.wrapper
+{
+    width:100%
+}
+
+.logo
+{
+    color:white;
+    margin-top:25px;
+    margin-bottom:15px;
+    height:100px;
+    width:100%;
+    font-size:20px;
+    letter-spacing:3px;
+    font-weight:500;
+    background-color:#404040;
+}
+
+#logoL
+{
+    float:left;
+    text-align:center;
+    padding-top:10px;
+    padding-bottom:10px;
+    width:70px;
+    height: 70px;
+    /*border-right:2px dotted #666666;*/
+}
+
+#logoR
+{
+    float:left;
+    padding:20px;
+    width:804px/*784px*/;
+    height:70px;
+    text-align:justify;
+}
+
+.menu
+{
+    width:100%;
+    padding:10px 0;
+    background-color: #c34f4f;
+    text-align:center;
+    border-top: 1px solid #751b1b;
+    border-bottom: 1px solid #751b1b;
+}
+
+.topbar
+{
+    background-color:#128870;
+    color:white;
+    padding:10px;
+    margin-top:20px;
+    margin-bottom:25px;
+    height:170px;
+}
+
+#topbarL
+{
+    float:left;
+    padding:20px;
+    width:138px;
+    text-align:center;
+    border-right: 2px dotted #cccccc;
+}
+
+#topbarR
+{
+    float:left;
+    padding:20px;
+    width:760px;
+    font-size:16px;
+    text-align:justify;
+    font-size:12px;
+}
+
+.clear
+{
+    clear:both;
+}
+
+.content
+{
+    float:left;
+    padding:40px;
+    width:754px;
+    background-color:#404040;
+    min-height:760px;
+    text-align:justify;
+    /*overflow:scroll;*/
+}
+
+.contentm
+{
+    float:left;
+    padding:40px;
+    height:1125px;
+    width:754px;
+    background-color:#404040;
+    text-align:justify;
+    /*overflow:scroll;*/
+}
+
+.sidebar
+{
+    float:left;
+    width:148px;
+    min-height:800px;
+    padding:20px;
+    background-color:#404040;
+    text-align:center;
+    border-left:2px dotted #cccccc;
+}
+
+.sidebar2
+{
+    float:left;
+    width:148px;
+    min-height:1102px;
+    padding:20px;
+    background-color:#404040;
+    text-align:center;
+    border-left:2px dotted #cccccc;
+}
+
+.sidebara
+{
+    float:left;
+    width:148px;
+    min-height:1123px;
+    padding:20px;
+    background-color:#404040;
+    text-align:center;
+    border-left:2px dotted #cccccc;
+}
+
+.sidebarm
+{
+    float:left;
+    width:148px;
+    min-height:1165px;
+    padding:20px;
+    background-color:#404040;
+    text-align:center;
+    border-left:2px dotted #cccccc;
+}
+
+.sidebarf
+{
+    float:left;
+    width:148px;
+    min-height:1198px;
+    padding:20px;
+    background-color:#404040;
+    text-align:center;
+    border-left:2px dotted #cccccc;
+}
+
+
+.socials
+{
+    clear:both;
+    width:1024px;
+    background-color:#292929;
+    text-align:center;
+}
+
+.pp
+{
+    width: 256px;
+    height:155px;
+    float:left;
+}
+
+.pp:hover
+{
+    background-color:#006991;
+    cursor:pointer;
+}
+
+.fb
+{
+    width: 256px;
+    height:155px;
+    float:left;
+}
+
+.fb:hover
+{
+    background-color:#4668b3;
+    cursor:pointer;
+}
+
+.yt
+{
+    width: 256px;
+    height:155px;
+    float:left;
+}
+
+.yt:hover
+{
+    background-color:#d94348;
+    cursor:pointer;
+}
+
+.fee
+{
+    width: 256px;
+    height:155px;
+    float:left;
+}
+
+.fee:hover
+{
+    background-color:#F2910D;
+    cursor:pointer;
+}
+
+a.linki
+{
+    color:#ffffff;
+    text-decoration:none;
+}
+
+.footer
+{
+    text-align:center;
+    color:white;
+    padding:10px;
+    font-size:12px;
+}
+
+a:visited
+{
+    color:white;
+}
+
+a:before
+{
+    color:white;
+}
+
+.sticky
+{
+    width:100%;
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:100;
+}
+
+ol
+{
+    display: inline-block;
+    padding:0;
+    margin:0;
+    list-style-type:none;
+    font-size: 14px;
+    height:35px;
+    line-height:200%;
+}
+
+ol a
+{
+    color:white;
+    text-decoration:none;
+    display:block;
+}
+
+ol > li /* Rodzic-Potomek hierarchia*/ 
+{
+        float: left;
+        width: 100px;
+        height:40px;
+        border-right: 1px dashed #751b1b;
+}
+
+ol > li:first-child /*Dotyczy tylko pierwszego potomka*/
+{
+        border-left: 1px dashed #751b1b;
+}
+
+ol > li:hover
+{
+    background-color: #cf6969;
+}
+
+ol > li:hover > a /*hierarchia a- dziecko li a li- dziecko ol*/
+{
+    color: #451717;
+}
+
+ol > li > ul
+{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    height: 40px;
+    display:none;
+}
+
+ol > li > ul > li
+{
+    background-color:#cf6969;
+    position:relative;
+    z-index:100;
+    border-top: 1px dashed #751b1b;
+}
+
+ol > li > ul > li:hover
+{
+    background-color: #c34f4f;
+}
+
+ol > li > ul > li:hover > a
+{
+    color: #451717;
+}
+
+ol > li:hover > ul
+{
+    display:block;
+}
+
+a 
+{
+    color:white;
+}
+
+h1 
+{
+    font-size:20px;
+}
+
+#kot 
+{
+    text-align:center;
+    color:#c34f4f;
+}
+
+.justify
+{
+    text-align:justify;
+}
+
+#zegar
+{
+    font-weight:bold;
+}
+
+#kalendarz
+{
+    font-weight:bold;
+}
+
+table 
+{
+    padding: 0px;
+    border-spacing: 0px;
+    text-align: center;
+}
+      
+tr > td 
+{
+    font-family: 'Ubuntu';
+    color: white;
+    padding: 5px;
+}
+        
+td:first-child{
+    font-weight:bold;
+    color:#128870;
+}b34{
+    font-weight:bold;
+}h95{
+    font-size:30px;
+    text-align:justify;
+}
+

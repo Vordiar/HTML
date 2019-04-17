@@ -1,0 +1,141 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Trochę słów o mnie</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona poświęcona kosmosowi powstała w ramach projektu na zajęcia z TI." />
+    <meta name="keywords" content="kosmos, wszechświat, słońce, ziemia, niebo, TI, politechnika, polibuda, TI, wiecej_tagow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!--Ten twór wymusi na internet explorerze otworzenie strony w najnowszym możliwym wydaniu -->
+    <meta name="author" content="Łukasz Stanisław Piątek" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="zegarek.js"></script>
+    <script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+
+	if (ScrollY > NavY) {
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky');
+	}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+    </script>
+</head>
+<body onload="dzisiejsza_data(); aktualna_godzina(); ">
+    <audio autoplay><source src="audio/marty.mp3" type="audio/mpeg" /></audio>
+    <div class="wrapper">
+        <div class="logo">
+            <div id="logoL">
+                <img src="img/Ziemia.png" />
+            </div>
+            <div id="logoR">
+            <center>Zakochaj się w kosmosie i tak jak Stephen Hawking spoglądając w niebo szukaj inspiracji!</center>
+            </div>
+            <div style="clear:both"></div>
+        </div>
+        <div class="menu">
+            <ol>
+                <li><a href="index.html" target="_self">Strona główna</a></li>
+                <li><a href="ciekawostki.html" target="_self">Ciekawostki</a></li>
+                <li><a href="misje.html" target="_self">Misje</a></li>
+                <li><a href="kosmolator.html" target="_self">Kosmolator</a></li>
+                <li>
+                    Polecane
+                    <ul>
+                        <li><a href="literatura.html" target="_self">Literatura</a></li>
+                        <li><a href="filmy.html" target="_self">Filmy</a></li>
+                        <li><a href="programy.html" target="_self">Programy</a></li>
+                    </ul>
+                </li>
+                <li><a href="rysowanie.html" target="_self">Rysowanie</a></li>
+                <li><a href="aplikuj.html" target="_self">Aplikuj!</a></li>
+                <li><a href="o-mnie.html" target="_self">O mnie</a></li>
+            </ol>
+        </div>
+        <div class="topbar">
+            <div id="topbarL">
+                <img src="img/emmetbrown.jpg" title="dr Emmet Brown" alt="Dlaczego nie działasz?!" id="EB" usemap="#mapa" />
+                <map name="mapa">
+                    <area shape="rect" coords="0,0,130,130" title="Znany podróżnik w czasie" alt="Co tu się stało?" href="http://www.filmweb.pl/film/Powr%C3%B3t+do+przysz%C5%82o%C5%9Bci-1985-8823#" target="_blank" />
+                </map>
+            </div>
+            <div id="topbarR">
+                Cytat <b>dr Emmeta Browna</b> na dziś:<br />
+                <i>
+                      <font size="7">"Great Scott! Marty we must back to the Future!"</font>
+                </i>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="content">
+            <font size="5">
+            <div class="justify">Imię i nazwisko: <b>Łukasz Piątek</b><br />
+            Numer indeksu: <b>121887</b><br />
+            Grupa dziekańska: <b>EN1</b><br />
+            E-mail: <b><a href="mailto:lukasz.piatek@student.put.poznan.pl">lukasz.piatek@student.put.poznan.pl</a></b> 
+            </div>
+            </font>       
+            <br /><br />
+          <center><img src="img/toja.jpg" title="To ja!" alt="Jednak mnie nie ma" width="400" height="550" /></center>
+            <center><i><font color="#128870" size="5">Tak, to ja!</font></i></center>
+        </div>
+        <div class="sidebar">
+            Aktualna godzina:<br />
+            <div id="zegar"></div>  <br />
+            <br />
+            Dzisiejsza data:<br />
+            <div id="kalendarz"></div>  <br />
+            <br />
+            Do następnego pojawienia się <b><font color="#c34f4f">komety Halleya</font></b> zostało:
+            <br />
+            <b>
+                <script type="text/javascript">
+        dzisiaj=new Date()
+        var halley=new Date(2061, 6, 28) //pamiętaj, że miesiące w JS 0-11
+        var jeden_dzien=1000*60*60*24 //przeliczam jeden dzień na milisekundy
+        //obliczanie różnicy dni
+        document.write(Math.ceil((halley.getTime()-dzisiaj.getTime())/(jeden_dzien))+" dni!")
+                </script>
+            </b>
+            <br /><br /><br />
+            Licznik odwiedzin:<br />
+            <script type="text/javascript" src="http://www.licznikodwiedzin.pl/cnt/start.php?key=278442810"></script>
+            <br />
+        </div>
+        <div class="socials">
+            <div class="pp">
+                <a href="http://www.put.poznan.pl/" title="Oficjalna strona uczelni." target="_blank"><i class="icon-empire"></i></a>
+            </div>
+            <div class="fb">
+                <a href="https://www.facebook.com/Politechnika.Poznanska/?fref=ts" target="_blank"><i class="icon-facebook-official"></i></a>
+            </div>
+            <div class="yt">
+                <a href="https://www.youtube.com/watch?v=30Ta-0ICS4s" target="_blank"> <i class="icon-youtube-squared"></i></a>
+            </div>
+            <div class="fee">
+                <a href="http://www.fee.put.poznan.pl" title="Strona wydziału elektrycznego." target="_blank"><i class="icon-rebel"></i></a>
+            </div>
+        </div>
+        <div class="footer">
+         Strona powstała w ramach zaliczenia projektu z TI na użytek niekomercyjny. Wszystkie prawa zastrzeżone &copy; 2016
+         ~Niech Moc będzie z Tobą!
+    </div>
+    </div>
+</body>
+</html>

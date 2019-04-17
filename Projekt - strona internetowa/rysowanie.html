@@ -1,0 +1,452 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Rysowanie</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona poświęcona kosmosowi powstała w ramach projektu na zajęcia z TI." />
+    <meta name="keywords" content="kosmos, wszechświat, słońce, ziemia, niebo, TI, politechnika, polibuda, TI, wiecej_tagow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!--Ten twór wymusi na internet explorerze otworzenie strony w najnowszym możliwym wydaniu --> 
+    <meta name="author" content="Łukasz Stanisław Piątek" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="zegarek.js"></script>
+    <script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+
+	if (ScrollY > NavY) {
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky');
+	}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+    </script>
+    <style>
+        canvas 
+        {
+            border: 5px solid orange;
+            background-color: white;
+        }
+
+        input 
+        {
+            color: #c34f4f;
+        }
+
+            input.Selected 
+            {
+                background-color: #cf6969;
+            }
+    </style>
+    <script type="text/javascript">
+        var can1;
+        var cont1;
+        window.onload = function ()
+        {
+            can1 = document.getElementById("canvas1");
+        }
+        function rysujtlo()
+        {
+            if (cont1 == null)
+            {
+                cont1 = can1.getContext("2d");
+            }
+            cont1.beginPath();
+            cont1.fillStyle = "rgb(0,0,0)";
+            cont1.fillRect(0, 0, 754, 700);
+        }
+        function rysujgwiazdy()
+        {
+            if (cont1 == null)
+            {
+                cont1 = can1.getContext("2d");
+            }
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.moveTo(104, 68);
+            cont1.lineTo(94, 95);
+            cont1.lineTo(67, 99);
+            cont1.lineTo(87, 116);
+            cont1.lineTo(82, 144);
+            cont1.lineTo(104, 129);
+            cont1.lineTo(127, 144);
+            cont1.lineTo(122, 116);
+            cont1.lineTo(142, 98);
+            cont1.lineTo(114, 96);
+            cont1.lineTo(104,68);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.moveTo(611, 62);
+            cont1.lineTo(600, 95);
+            cont1.lineTo(565, 95);
+            cont1.lineTo(594, 115);
+            cont1.lineTo(582, 147);
+            cont1.lineTo(611, 127);
+            cont1.lineTo(642, 145);
+            cont1.lineTo(629, 116);
+            cont1.lineTo(655, 97);
+            cont1.lineTo(623, 96);
+            cont1.lineTo(611, 62);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.lineTo(653, 283);
+            cont1.lineTo(642, 312);
+            cont1.lineTo(612, 314);
+            cont1.lineTo(634, 334);
+            cont1.lineTo(627, 364);
+            cont1.lineTo(653, 348);
+            cont1.lineTo(677, 363);
+            cont1.lineTo(671, 333);
+            cont1.lineTo(693, 316);
+            cont1.lineTo(664, 312);
+            cont1.lineTo(653, 283);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.lineTo(586, 496);
+            cont1.lineTo(575, 526);
+            cont1.lineTo(544, 529);
+            cont1.lineTo(567, 549);
+            cont1.lineTo(560, 581);
+            cont1.lineTo(588, 565);
+            cont1.lineTo(612, 583);
+            cont1.lineTo(604, 550);
+            cont1.lineTo(627, 528);
+            cont1.lineTo(597, 527);
+            cont1.lineTo(586, 496);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.lineTo(128, 303);
+            cont1.lineTo(117, 331);
+            cont1.lineTo(89, 335);
+            cont1.lineTo(110, 354);
+            cont1.lineTo(102, 382);
+            cont1.lineTo(128, 369);
+            cont1.lineTo(153, 383);
+            cont1.lineTo(147, 354);
+            cont1.lineTo(167, 334);
+            cont1.lineTo(138, 333);
+            cont1.lineTo(128, 303);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.lineTo(83, 532);
+            cont1.lineTo(73, 561);
+            cont1.lineTo(44, 566);
+            cont1.lineTo(66, 582);
+            cont1.lineTo(59, 612);
+            cont1.lineTo(85, 597);
+            cont1.lineTo(110, 611);
+            cont1.lineTo(101, 582);
+            cont1.lineTo(123, 565);
+            cont1.lineTo(95, 562);
+            cont1.lineTo(83, 532);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+        }
+
+        function rysujziemie()
+        {
+            if (cont1 == null)
+            {
+                cont1 = can1.getContext("2d");
+            }
+            cont1.beginPath();
+            cont1.strokeStyle = "blue";
+            cont1.lineWidth = 3;
+            cont1.lineCap = "round";
+            cont1.arc(375, 375, 100, 0, 360);
+            cont1.fillStyle = "blue";
+            cont1.fill();
+            cont1.stroke();
+        }
+
+        function rysujkontynenty()
+        {
+            if (cont1 == null)
+            {
+                cont1 = can1.getContext("2d");
+            }
+            cont1.beginPath();
+            cont1.strokeStyle = "yellow";
+            cont1.lineWidth = 1;
+            cont1.lineCap = "round";
+            cont1.moveTo(377, 449);
+            cont1.lineTo(372, 443);
+            cont1.lineTo(371, 431);
+            cont1.lineTo(372, 422);
+            cont1.lineTo(372, 403);
+            cont1.lineTo(358, 401);
+            cont1.lineTo(351, 396);
+            cont1.lineTo(351, 379);
+            cont1.lineTo(363, 377);
+            cont1.lineTo(367, 375);
+            cont1.lineTo(382, 377);
+            cont1.lineTo(392, 382);
+            cont1.lineTo(397, 394);
+            cont1.lineTo(395, 406);
+            cont1.lineTo(395, 420);
+            cont1.lineTo(384, 435);
+            cont1.lineTo(377, 449);
+            cont1.fillStyle = "yellow";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "red";
+            cont1.lineWidth = 1;
+            cont1.lineCap = "round";
+            cont1.moveTo(421,420);
+            cont1.lineTo(428, 432);
+            cont1.lineTo(439, 438);
+            cont1.lineTo(445, 434);
+            cont1.lineTo(446, 425);
+            cont1.lineTo(443, 418);
+            cont1.lineTo(438, 414);
+            cont1.lineTo(421, 420);
+            cont1.fillStyle = "red";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "green";
+            cont1.lineWidth = 1;
+            cont1.lineCap = "round";
+            cont1.moveTo(352,363);
+            cont1.lineTo(346, 358);
+            cont1.lineTo(350, 348);
+            cont1.lineTo(352, 341);
+            cont1.lineTo(358, 337);
+            cont1.lineTo(366, 332);
+            cont1.lineTo(383, 317);
+            cont1.lineTo(390, 317);
+            cont1.lineTo(397, 319);
+            cont1.lineTo(408, 323);
+            cont1.lineTo(422, 324);
+            cont1.lineTo(432, 325);
+            cont1.lineTo(440, 331);
+            cont1.lineTo(451, 339);
+            cont1.lineTo(457, 352);
+            cont1.lineTo(458, 369);
+            cont1.lineTo(457, 384);
+            cont1.lineTo(450, 392);
+            cont1.lineTo(439, 393);
+            cont1.lineTo(424, 392);
+            cont1.lineTo(410, 394);
+            cont1.lineTo(408, 381);
+            cont1.lineTo(405, 373);
+            cont1.lineTo(396, 365);
+            cont1.lineTo(386, 361);
+            cont1.lineTo(373, 359);
+            cont1.lineTo(360, 360);
+            cont1.lineTo(352, 363);
+            cont1.fillStyle = "green";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "orange";
+            cont1.lineWidth = 1;
+            cont1.lineCap = "round";
+            cont1.moveTo(321,371);
+            cont1.lineTo(308, 368);
+            cont1.lineTo(306, 366);
+            cont1.lineTo(305, 347);
+            cont1.lineTo(308, 336);
+            cont1.lineTo(313, 325);
+            cont1.lineTo(318, 313);
+            cont1.lineTo(319, 310);
+            cont1.lineTo(324, 307);
+            cont1.lineTo(334, 302);
+            cont1.lineTo(338, 307);
+            cont1.lineTo(341, 321);
+            cont1.lineTo(340, 329);
+            cont1.lineTo(332, 343);
+            cont1.lineTo(325, 361);
+            cont1.lineTo(321, 371);
+            cont1.fillStyle = "orange";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.beginPath();
+            cont1.strokeStyle = "brown";
+            cont1.lineWidth = 1;
+            cont1.lineCap = "round";
+            cont1.moveTo(316,426);
+            cont1.lineTo(306, 415);
+            cont1.lineTo(297, 404);
+            cont1.lineTo(296, 397);
+            cont1.lineTo(298, 388);
+            cont1.lineTo(300, 383);
+            cont1.lineTo(309, 381);
+            cont1.lineTo(314, 381);
+            cont1.lineTo(322, 388);
+            cont1.lineTo(323, 395);
+            cont1.lineTo(319, 402);
+            cont1.lineTo(318, 416);
+            cont1.lineTo(316, 426);
+            cont1.fillStyle = "brown";
+            cont1.fill();
+            cont1.stroke();
+
+            cont1.font = "50px Ubuntu";
+            cont1.textAlign = "center";
+            cont1.fillText("Zielona", can1.width / 2, 50);
+            cont1.textAlign = "center";
+            cont1.lineWidth = 1;
+            cont1.strokeText("Planeta", can1.width / 2, 100);
+        }
+
+        function czyscrysunek()
+        {
+            if (cont1 == null)
+            {
+                cont1 = can1.getContext("2d");
+            }
+            cont1.beginPath();
+            cont1.fillStyle = "white";
+            cont1.fillRect(0, 0, 754, 700);
+        }
+    </script>
+
+</head>
+<body onload="dzisiejsza_data(); aktualna_godzina(); ">
+<div class="wrapper">
+<div class="logo">
+    <div id="logoL">
+        <img src="img/Ziemia.png" />
+    </div>
+    <div id="logoR">
+    <center>Zakochaj się w kosmosie i tak jak Stephen Hawking spoglądając w niebo szukaj inspiracji!</center>
+    </div>
+    <div style="clear:both"></div>
+</div>
+<div class="menu">
+    <ol>
+        <li><a href="index.html" target="_self">Strona główna</a></li>
+        <li><a href="ciekawostki.html" target="_self">Ciekawostki</a></li>
+        <li><a href="misje.html" target="_self">Misje</a></li>
+        <li><a href="kosmolator.html" target="_self">Kosmolator</a></li>
+        <li>
+            Polecane
+            <ul>
+                <li><a href="literatura.html" target="_self">Literatura</a></li>
+                <li><a href="filmy.html" target="_self">Filmy</a></li>
+                <li><a href="programy.html" target="_self">Programy</a></li>
+            </ul>
+        </li>
+        <li><a href="rysowanie.html" target="_self">Rysowanie</a></li>
+        <li><a href="aplikuj.html" target="_self">Aplikuj!</a></li>
+        <li><a href="o-mnie.html" target="_self">O mnie</a></li>
+    </ol>
+</div>
+<div class="topbar">
+<div id="topbarL">
+    <img src="img/neil.jpg" title="Neil Armstrong" usemap="#mapa" />
+    <map name="mapa">
+        <area shape="rect" coords="0,0,130,130" title="Neil Armstrong" alt="Dlaczego nie działasz?!" href="https://pl.wikipedia.org/wiki/Neil_Armstrong" target="_blank" />
+    </map>
+</div>
+<div id="topbarR">
+    Cytat <b>Neila Armstronga</b> na dziś:<br />
+    <font size="7"><i><q>Houston, tu Baza Spokoju. „Orzeł” wylądował.</q></i></font>
+</div>
+</div>
+<div class="clear"></div>
+<div class="content">
+   <center>
+       <canvas id="canvas1" width="754" height="700"></canvas><br /><br />
+       <input type="button" name="btnLinie" value="Dodaj tło" onclick="rysujtlo();" />
+       <input type="button" name="btnLinie" value="Dodaj gwiazdy" onclick="rysujgwiazdy();" />
+       <input type="button" name="btnLinie" value="Dodaj Ziemię" onclick="rysujziemie();" />
+       <input type="button" name="btnLinie" value="Dodaj Kontynenty" onclick="rysujkontynenty();" />
+       <input type="button" name="btnLinie" value="Czyść rysunek" onclick="czyscrysunek();" />
+   </center>
+</div>
+<div class="sidebar">
+    Aktualna godzina:<br />
+    <div id="zegar"></div>  <br />
+    <br />
+    Dzisiejsza data:<br />
+    <div id="kalendarz"></div>  <br />
+    <br />
+    Do następnego pojawienia się <b><font color="#c34f4f">komety Halleya</font></b> zostało:<br />
+    <b><script type="text/javascript">
+        dzisiaj=new Date()
+        var halley=new Date(2061, 6, 28) //pamiętaj, że miesiące w JS 0-11
+        var jeden_dzien=1000*60*60*24 //przeliczam jeden dzień na milisekundy
+        //obliczanie różnicy dni
+        document.write(Math.ceil((halley.getTime()-dzisiaj.getTime())/(jeden_dzien))+" dni!")
+    </script></b>
+    <br /><br /><br />
+    Licznik odwiedzin:<br />
+    <script type="text/javascript" src="http://www.licznikodwiedzin.pl/cnt/start.php?key=278442810"></script>
+    <br />
+</div>
+<div class="socials">
+    <div class="pp">
+        <a href="http://www.put.poznan.pl/" title="Oficjalna strona uczelni." target="_blank"><i class="icon-empire"></i></a>
+    </div>
+    <div class="fb">
+        <a href="https://www.facebook.com/Politechnika.Poznanska/?fref=ts" target="_blank"><i class="icon-facebook-official"></i></a>
+    </div>
+    <div class="yt">
+       <a href="https://www.youtube.com/watch?v=30Ta-0ICS4s" target="_blank"> <i class="icon-youtube-squared"></i></a>
+    </div>
+    <div class="fee">
+       <a href="http://www.fee.put.poznan.pl" title="Strona wydziału elektrycznego." target="_blank"><i class="icon-rebel"></i></a>
+    </div>
+</div>
+<div class="footer">
+    Strona powstała w ramach zaliczenia projektu z TI na użytek niekomercyjny. Wszystkie prawa zastrzeżone &copy; 2016
+    ~Niech Moc będzie z Tobą!
+</div>
+</div>            
+</body>
+</html>

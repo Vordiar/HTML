@@ -1,0 +1,144 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Kosmolator</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona poświęcona kosmosowi powstała w ramach projektu na zajęcia z TI." />
+    <meta name="keywords" content="kosmos, wszechświat, słońce, ziemia, niebo, TI, politechnika, polibuda, TI, wiecej_tagow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!--Ten twór wymusi na internet explorerze otworzenie strony w najnowszym możliwym wydaniu --> 
+    <meta name="author" content="Łukasz Stanisław Piątek" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="zegarek.js"></script>
+    <script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+
+	if (ScrollY > NavY) {
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky');
+	}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+    </script>
+</head>
+<body onload="dzisiejsza_data(); aktualna_godzina(); ">
+<div class="wrapper">
+<div class="logo">
+    <div id="logoL">
+        <img src="img/Ziemia.png" />
+    </div>
+    <div id="logoR">
+    <center>Zakochaj się w kosmosie i tak jak Stephen Hawking spoglądając w niebo szukaj inspiracji!</center>
+    </div>
+    <div style="clear:both"></div>    
+</div>
+<div class="menu">
+    <ol>
+        <li><a href="index.html" target="_self">Strona główna</a></li>
+        <li><a href="ciekawostki.html" target="_self">Ciekawostki</a></li>
+        <li><a href="misje.html" target="_self">Misje</a></li>
+        <li><a href="kosmolator.html" target="_self">Kosmolator</a></li>
+        <li>
+            Polecane
+            <ul>
+                <li><a href="literatura.html" target="_self">Literatura</a></li>
+                <li><a href="filmy.html" target="_self">Filmy</a></li>
+                <li><a href="programy.html" target="_self">Programy</a></li>
+            </ul>
+        </li>
+        <li><a href="rysowanie.html" target="_self">Rysowanie</a></li>
+        <li><a href="aplikuj.html" target="_self">Aplikuj!</a></li>
+        <li><a href="o-mnie.html" target="_self">O mnie</a></li>
+    </ol>
+</div>
+<div class="topbar">
+<div id="topbarL">
+    <img src="img/einstein.jpg" title="Albert Einstein" alt="Dlaczego nie działasz?!" usemap="#mapa" />
+    <map name="mapa">
+        <area shape="rect" coords="0,0,130,130" title="Albert Einstein" alt="Dlaczego nie działasz?!" href="https://pl.wikipedia.org/wiki/Albert_Einstein" target="_blank" />
+    </map>
+</div>
+<div id="topbarR">
+    Cytat <b>Alberta Einsteina</b> na dziś:<br />
+    <font size="6"><i><q>Je­dynym do­wodem na to, że is­tnieje ja­kaś po­zaziem­ska in­te­ligen­cja, jest to, że się z na­mi nie kontaktują.</q></i></font>
+</div>
+</div>
+<div class="clear"></div>    
+<div class="content">
+<center><font size="5"><b>Kosmolator BMI!</b></font></center><br />
+    Drogi Użytkowniku! Poniżej przedstawiam Ci mój projekt kosmicznego kalkulatora BMI- <i>Kosmolatora</i>, który sprawdzi czy możesz lecieć w kosmos. Wystarczy tylko, że podasz swój wzrost i wagę, a elektroniczny
+    ekspert wystawi Ci opinię.<br /><br /> 
+<center>
+<fieldset>
+            <legend><font color="#c34f4f"><b>Kosmiczne BMI</b></font></legend><br /><br />
+<form name="bmiForm">
+    <label for="masa">Podaj swoją wagę w kilogramach:</label><br />
+    <input type="number" name="waga" placeholder="Ile ważysz?" autofocus required/><br /><br />
+    <label for="wysokosc">Podaj swoją wzrost w centymetrach:</label><br />
+    <input type="number" name="wzrost" placeholder="Ile mierzysz?" required /><br /><br />
+    <label for="wysokosc">Wartość BMI:</label><br />
+    <input type="number" name="bmi" /><br /><br />
+    <label for="wysokosc">Opinia specjalisty:</label><br />
+    <input type="text" name="meaning" size="68"/><br /><br />
+</form>   
+</fieldset><br />
+    <input type="button" name="btnKonwerter" value="Przelicz" onclick="policzBMI();" />
+</center>
+</div>
+<div class="sidebar">
+    Aktualna godzina:<br />
+    <div id="zegar"></div>  <br />
+    <br />
+    Dzisiejsza data:<br />
+    <div id="kalendarz"></div>  <br />
+    <br />
+    Do następnego pojawienia się <b><font color="#c34f4f">komety Halleya</font></b> zostało:<br />
+    <b><script type="text/javascript">
+        dzisiaj=new Date()
+        var halley=new Date(2061, 6, 28) //pamiętaj, że miesiące w JS 0-11
+        var jeden_dzien=1000*60*60*24 //przeliczam jeden dzień na milisekundy
+        //obliczanie różnicy dni
+        document.write(Math.ceil((halley.getTime()-dzisiaj.getTime())/(jeden_dzien))+" dni!")
+    </script></b>
+    <br /><br /><br />
+    Licznik odwiedzin:<br />
+    <script type="text/javascript" src="http://www.licznikodwiedzin.pl/cnt/start.php?key=278442810"></script>
+    <br />
+</div>
+<div class="socials">
+    <div class="pp">
+        <a href="http://www.put.poznan.pl/" title="Oficjalna strona uczelni." target="_blank"><i class="icon-empire"></i></a>
+    </div>
+    <div class="fb">
+        <a href="https://www.facebook.com/Politechnika.Poznanska/?fref=ts" target="_blank"><i class="icon-facebook-official"></i></a>
+    </div>
+    <div class="yt">
+       <a href="https://www.youtube.com/watch?v=30Ta-0ICS4s" target="_blank"> <i class="icon-youtube-squared"></i></a>
+    </div>
+    <div class="fee">
+       <a href="http://www.fee.put.poznan.pl" title="Strona wydziału elektrycznego." target="_blank"><i class="icon-rebel"></i></a>
+    </div>
+</div>
+<div class="footer">
+    Strona powstała w ramach zaliczenia projektu z TI na użytek niekomercyjny. Wszystkie prawa zastrzeżone &copy; 2016
+    ~Niech Moc będzie z Tobą!
+</div>
+</div>            
+</body>
+</html>

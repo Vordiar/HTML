@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Ciekawostki</title>
+    <meta charset="utf-8" />
+    <meta name="description" content="Strona poświęcona kosmosowi powstała w ramach projektu na zajęcia z TI." />
+    <meta name="keywords" content="kosmos, wszechświat, słońce, ziemia, niebo, TI, politechnika, polibuda, TI, wiecej_tagow" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> <!--Ten twór wymusi na internet explorerze otworzenie strony w najnowszym możliwym wydaniu --> 
+    <meta name="author" content="Łukasz Stanisław Piątek" />
+    <link rel="stylesheet" type="text/css" href="layout.css" />
+    <link rel="stylesheet" type="text/css" href="fontello/css/fontello.css" />
+    <link href='https://fonts.googleapis.com/css?family=Ubuntu:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+    <script src="jquery-2.2.4.min.js"></script>
+    <script src="zegarek.js"></script>
+    <script>
+
+	$(document).ready(function() {
+	var NavY = $('.menu').offset().top;
+
+	var stickyNav = function(){
+	var ScrollY = $(window).scrollTop();
+
+	if (ScrollY > NavY) {
+		$('.menu').addClass('sticky');
+	} else {
+		$('.menu').removeClass('sticky');
+	}
+	};
+
+	stickyNav();
+
+	$(window).scroll(function() {
+		stickyNav();
+	});
+	});
+
+    </script>
+</head>
+<body onload="dzisiejsza_data(); aktualna_godzina(); ">
+<div class="wrapper">
+<div class="logo">
+    <div id="logoL">
+        <img src="img/Ziemia.png" />
+    </div>
+    <div id="logoR">
+    <center>Zakochaj się w kosmosie i tak jak Stephen Hawking spoglądając w niebo szukaj inspiracji!</center>
+    </div>
+    <div style="clear:both"></div>    
+</div>
+<div class="menu">
+    <ol>
+        <li><a href="index.html" target="_self">Strona główna</a></li>
+        <li><a href="ciekawostki.html" target="_self">Ciekawostki</a></li>
+        <li><a href="misje.html" target="_self">Misje</a></li>
+        <li><a href="kosmolator.html" target="_self">Kosmolator</a></li>
+        <li>
+            Polecane
+            <ul>
+                <li><a href="literatura.html" target="_self">Literatura</a></li>
+                <li><a href="filmy.html" target="_self">Filmy</a></li>
+                <li><a href="programy.html" target="_self">Programy</a></li>
+            </ul>
+        </li>
+        <li><a href="rysowanie.html" target="_self">Rysowanie</a></li>
+        <li><a href="aplikuj.html" target="_self">Aplikuj!</a></li>
+        <li><a href="o-mnie.html" target="_self">O mnie</a></li>
+    </ol>
+</div>
+<div class="topbar">
+<div id="topbarL">
+    <img src="img/kopernik.jpg" title="Mikołaj Kopernik" usemap="#mapa" />
+    <map name="mapa">
+        <area shape="rect" coords="0,0,130,130" title="Mikołaj Kopernik -twórca teorii heliocentrycznej." alt="Dlaczego nie działasz?!" href="https://pl.wikipedia.org/wiki/Miko%C5%82aj_Kopernik" 
+        target="_blank" />
+    </map>
+</div>
+<div id="topbarR">
+    Cytat <b>Mikołaja Kopernika</b> na dziś:<br />
+   <font size="3"><i><q>Chociaż niezliczone są klęski, wskutek których zazwyczaj podupadają królestwa, księstwa i rzeczpospolite, to jednak najgroźniejsze są – moim zdaniem – cztery: 
+   niezgoda, śmiertelność, nieurodzajność ziemi oraz spadek wartości monety. Trzy pierwsze są tak oczywiste, że nie ma nikogo, kto by o tym nie wiedział, jednakże czwarta, która dotyczy 
+   monety, dostrzegana jest przez niewielu i to jedynie przez najgłębiej myślących, ponieważ nie powoduje natychmiastowego i gwałtownego upadku państw, ale doprowadza je do tego stanu 
+   stopniowo i jakby niewidocznie. </q></i></font>
+</div>
+</div>
+<div class="clear"></div>        
+<div class="content">
+    <img src="img/polsa2.png" title="Logo POLSA" alt="Czemu nie działasz?!" style="float:left" width="200" height="100" usemap="#POLSA" />
+    <map name="POLSA">
+        <area shape="rect" coords="0,0,200,100" title="Strona Polskiej Agencji Kosmicznej" alt="Czemu nie działasz?!" href="https://www.polsa.gov.pl/pl/" target="_blank" />
+    </map>
+    <b><font size="7"><font color="#000066">POLSA</font> - czyli <br /> Poland can into Space!</font></b><br /><br />
+    Polska Agencja Kosmiczna, ponieważ to o niej jest mowa w tym artykule została powołana 26 września 2014 roku i jest członkiem międzynarodowej organizacji krajów europejskich,
+    <a href="https://pl.wikipedia.org/wiki/Europejska_Agencja_Kosmiczna" target="_blank">Europejskiej Agencji Kosmicznej</a> której celem jest eksploracja kosmosu. 
+    Siedziba Polskiej odmiany NASA mieści się w Gdańsku na wniosek byłego rektora Politechniki Gdańskiej i senatora Rzeczypospolitej Polskiej Edmunda Wittbrodta. Warto zauważyć, że na 
+    takich uczelniach jak: <b>Politechnika Gdańska</b> <b>Akademia Marynarki Wojennej</b> oraz <b>Akademia Morska</b> utworzono kierunki, które są w pełni dedykowane przemysłowi kosmicznemu. W kierunku 
+    wszechświata stara się i wyruszyć moja macierzysta uczelnia, <b>Politechnika Poznańska</b> która powołała nowy kierunek: <b><i>Lotnictwo i Kosmonautyka</i></b>.<br /><br />
+
+    <b><font size="5">Misje POLSA:</font></b><br />
+    -Zwiększenie obronności i bezpieczeństwa państwa poprzez wykonywanie zadań z zakresu obronności i bezpieczeństwa państwa przez: satelitarną obserwację Ziemi czy obserwację przestrzeni 
+    kosmicznej.<br />
+    -Zwiększenie efektywności działania administracji publicznej korzystającej na co dzień z serwisów opartych o dane satelitarnie dedykowane.<br />
+    -Rozwój zaawansowanych technologii: technik satelitarnych i technologii kosmicznych oraz wspieranie współpracy pomiędzy sektorem badawczo-rozwojowym i przedsiębiorstwami.<br /><br />
+
+    Zanim przejdę dalej chciałbym jeszcze raz poruszyć pytanie z nagłówka artykułu:<br /><br />
+    <img src="img/polandspace.jpg" title="Czy Polska może w kosmos?" alt="Czemu nie działasz?!" width="754px" height="350px" /><br /><br />
+
+    Mówiąc subiektywnie gdy pierwszy raz usłyszałem o <b>POLSA</b> od razu przyjąłem, że twór ten jest od początku spisany na straty i jest kolejną pseudo-organizacją mającą na celu 
+    łatwiejszy dostęp do pieniędzy rządowych osób na stołkach. Czy moje założenie było słuszne? Trudno stwierdzić, ale za to na pewno mogę powiedzieć, że tak jak zawsze to historia 
+    rozliczy czy projekt <b>POLSA</b> faktycznie może zrewolucjonizować Polskie podejście do eksploracji kosmosu. Poprzeczka postawiona przed dyrektorstwem Polskiej Agencji Kosmicznej została 
+    bardzo wysoko. <font color="#c34f4f"><u><b>Do roku 2030 polski sektor kosmiczny ma być w pewnych wybranych obszarach w pełni konkurencyjny w wymiarze globalnym i ma być w stanie zapewnić Polsce niezależność w dostępie do danych 
+    satelitarnych i w ich zastosowaniu.</b></u></font> Czy jest to wykonalne? Czas pokaże…<br />
+    <p align="right"><b>~Łukasz</b></p>
+</div>
+<div class="sidebar2">
+    Aktualna godzina:<br />
+    <div id="zegar"></div>  <br />
+    <br />
+    Dzisiejsza data:<br />
+    <div id="kalendarz"></div>  <br />
+    <br />
+    Do następnego pojawienia się <b><font color="#c34f4f">komety Halleya</font></b> zostało:<br />
+    <b><script type="text/javascript">
+        dzisiaj=new Date()
+        var halley=new Date(2061, 6, 28) //pamiętaj, że miesiące w JS 0-11
+        var jeden_dzien=1000*60*60*24 //przeliczam jeden dzień na milisekundy
+        //obliczanie różnicy dni
+        document.write(Math.ceil((halley.getTime()-dzisiaj.getTime())/(jeden_dzien))+" dni!")
+    </script></b>
+    <br /><br /><br />
+    Licznik odwiedzin:<br />
+    <script type="text/javascript" src="http://www.licznikodwiedzin.pl/cnt/start.php?key=278442810"></script>
+    <br />
+</div>
+<div class="socials">
+    <div class="pp">
+        <a href="http://www.put.poznan.pl/" title="Oficjalna strona uczelni." target="_blank"><i class="icon-empire"></i></a>
+    </div>
+    <div class="fb">
+        <a href="https://www.facebook.com/Politechnika.Poznanska/?fref=ts" target="_blank"><i class="icon-facebook-official"></i></a>
+    </div>
+    <div class="yt">
+       <a href="https://www.youtube.com/watch?v=30Ta-0ICS4s" target="_blank"> <i class="icon-youtube-squared"></i></a>
+    </div>
+    <div class="fee">
+       <a href="http://www.fee.put.poznan.pl" title="Strona wydziału elektrycznego." target="_blank"><i class="icon-rebel"></i></a>
+    </div>
+</div>
+<div class="footer">
+    Strona powstała w ramach zaliczenia projektu z TI na użytek niekomercyjny. Wszystkie prawa zastrzeżone &copy; 2016
+    ~Niech Moc będzie z Tobą!
+</div>
+</div>            
+</body>
+</html>
